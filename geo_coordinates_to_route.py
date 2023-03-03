@@ -87,7 +87,7 @@ def OD_matrix():
                    {'INPUT': '/Users/muhammadabdul/Desktop/Work/NTRC_Lahore-Road-Network/Lahore_District.shp',
                     'POINTS': 'delimitedtext://file:///Users/muhammadabdul/Desktop/Work/route_optimization/new_attempt/destinations.csv?type=csv&maxFields=10000&detectTypes=yes&xField=longitude&yField=latitude&crs=EPSG:3857&spatialIndex=no&subsetIndex=no&watchFile=no',
                     'ID_FIELD': 'field_1', 'STRATEGY': 0, 'ENTRY_COST_CALCULATION_METHOD': 0,
-                    'DIRECTION_FIELD': 'direction', 'VALUE_FORWARD': '1', 'VALUE_BACKWARD': '2', 'VALUE_BOTH': '0',
+                    'DIRECTION_FIELD': 'direction', 'VALUE_FORWARD': '1', 'VALUE_BACKWARD': '1', 'VALUE_BOTH': '0',
                     'DEFAULT_DIRECTION': 2, 'SPEED_FIELD': '', 'DEFAULT_SPEED': 5, 'TOLERANCE': 0,
                     'OUTPUT': '/Users/muhammadabdul/Desktop/Work/route_optimization/new_attempt/df_OD.csv'})
 
@@ -129,7 +129,7 @@ def shortest_path(optimized_df):
                        {'INPUT': '/Users/muhammadabdul/Desktop/Work/NTRC_Lahore-Road-Network/Lahore_District.shp',
                         'START_POINT': f'{start_point}',
                         'END_POINT': f'{end_point}', 'STRATEGY': 0, 'ENTRY_COST_CALCULATION_METHOD': 0,
-                        'DIRECTION_FIELD': 'direction', 'VALUE_FORWARD': '1', 'VALUE_BACKWARD': '2', 'VALUE_BOTH': '0',
+                        'DIRECTION_FIELD': 'direction', 'VALUE_FORWARD': '1', 'VALUE_BACKWARD': '1', 'VALUE_BOTH': '0',
                         'DEFAULT_DIRECTION': 2, 'SPEED_FIELD': '', 'DEFAULT_SPEED': 5, 'TOLERANCE': 0,
                         'OUTPUT': f'/Users/muhammadabdul/Desktop/Work/route_optimization/new_attempt/layer_files/{i-1}-{i}.gpkg'})
 
